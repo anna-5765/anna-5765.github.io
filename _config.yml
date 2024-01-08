@@ -90,6 +90,15 @@ content:
     layout: list # Type of content section (list/text)
     content:
       - layout: left
+        title: ETHx: ETH Zurich
+        caption: 2022 - 2013
+        sub_title: Self-Driving Cars with Duckietown
+        quote: >
+          Self-Driving Cars with Duckietown is a robotics and AI Massive Open Online Course hosted by edX, an online learning platform.
+        description: | # this will include new lines to allow paragraphs
+          I started this course as a way of improving my technical repitoire and learning about robotics and programming. Through an intense learning approach, I gained experience with professional tools and workflows used in modern robotics such as <mark>Linux</mark> and terminal interfaces, using <mark>ROS</mark>, programming in <mark>Python</mark>, training computer vision <mark>neural networks</mark>, managing code with <mark>GitHub</mark>, incrementally developing solutions, creative troubleshooting, and testing solutions in simulation before the real world.
+      
+      - layout: left
         title: Purdue University
         caption: 2014 - 2018
         sub_title: BSc Mechanical Engineering
@@ -100,6 +109,14 @@ content:
 
         #   I spent a lot of my free time as a committee member of the *Harvard Mountaineering Club* taking on roles such as *Trip Secretary* and *Vice-President*.
 
+      - layout: left
+        title: Purdue University
+        caption: 2014 - 2018
+        sub_title: BSc Mechanical Engineering
+        # quote: >
+        #   Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
+        # description: | # this will include new lines to allow paragraphs
+        #   D
   - title: A Little More About Me
     layout: text
     # content: | # this will include new lines to allow paragraphs
