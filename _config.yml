@@ -7,7 +7,7 @@ version: 2
 
 # Personal info
 name: Anna
-title:
+title: Perpetual Learner, Doer, and STEM Enthusiast
 email: 
 website:
 
@@ -101,7 +101,7 @@ content:
       - layout: left
         title: |
           ETHx: ETH Zurich
-        caption: 2022 - 2023
+        caption: November 2022 - November 2023
         sub_title: Self-Driving Cars with Duckietown
         quote: >
           Self-Driving Cars with Duckietown is a robotics and AI Massive Open Online Course hosted on edX, an online learning platform.
@@ -111,19 +111,19 @@ content:
           I also interacted with the community of peer learners and the staff on the course Slack and Stack Overflow. This includes asking for help and supporting others in answering peer questions.
       - layout: left
         title: Purdue University
-        caption: 2014 - 2018
+        caption: August 2014 - May 2018
         sub_title: | 
           BS Mechanical Engineering
         # quote: >
-        #   Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
-        # description: | # this will include new lines to allow paragraphs
-        #   During my time at Harvard I learnt most of my key skills that have I have taken through my career such as teamwork and working to tight deadlines. I thouroughly enjoyed my time as university and learnt a lot about a healthy work life balance.
+        #   insert quote text
+        description: | # this will include new lines to allow paragraphs
+          During my time at Purdue I learned key skills that have I have taken through my career such as dedication, an intuition to how the science of the world works, and a curiosity to creativly problem-solve. I thouroughly enjoyed my time at university.
 
-        #   I spent a lot of my free time as a committee member of the *Harvard Mountaineering Club* taking on roles such as *Trip Secretary* and *Vice-President*.
+          I spent a lot of my free time working on the Purdue Utiity Project global development team and advocating for global engineering experiences as an Ambassador for both the Office of Proffessional Practice Global Engineering Programs and the Global Engineering Alliance for Research and Education.
 
       - layout: left
         title: ESTACA
-        caption: 2017
+        caption: Spring 2017
         sub_title: Automotive & Aeronautics Design Program
         quote: >
           ESTACA (École Supérieure des Techniques Aéronautiques et de Construction Automobile) Paris campus offers this program to international applicants as a technical skill-centric program focusing on computer aided design and simulation.
