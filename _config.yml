@@ -7,7 +7,7 @@ version: 2
 
 # Personal info
 name: Anna
-title: Perpetual Learner, Doer, and STEM Enthusiast
+title: Perpetual Learner, Do-er, and STEM Enthusiast
 email: 
 website:
 
@@ -48,7 +48,9 @@ additional_links:
 about_title: About Me
 about_profile_image: # images/something.jpg
 about_content: | # this will include new lines to allow paragraphs
-   Hi, my name's Anna and I'm a Mechanical Engineer. Most recently I've taken an interest in robotics & autonomy, working through the Duckietown curriculum of self-driving vehicles. I have also worked in process engineering from line-side support, capital projects, data analytics, to management. Throughout my career I've gained skills including design, test, computer programming, teamwork, and leadership. 
+   Hi, my name's Anna and I'm a Mechanical Engineer. Most recently I've taken an interest in robotics & autonomy, working through the Duckietown curriculum of self-driving vehicles. I like programming, hands-on engineering and test, and cool tech.
+   
+# I have also worked in process engineering from line-side support, capital projects, data analytics, to management. Throughout my career I've gained skills including design, test, computer programming, teamwork, and leadership. 
 
    I am most skilled in: <mark>Learning</mark> and <mark>Optimism</mark>
 
@@ -57,7 +59,7 @@ content:
     layout: list # Type of content section (list/text)
     content:
       - layout: top-middle
-        title: Purdue Utility Project
+        title: Duckietown
         # link: github.com/sproogen
         # link_text: Project Website
         additional_links:
@@ -73,7 +75,7 @@ content:
         #    I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
 
       - layout: top-middle
-        title: Duckietown
+        title: Purdue Utility Project
         # link: github.com/sproogen
         # link_text: Project Website
         additional_links:
@@ -119,7 +121,7 @@ content:
         description: | # this will include new lines to allow paragraphs
           During my time at Purdue I learned key skills that have I have taken through my career such as dedication, an intuition to how the science of the world works, and a curiosity to creativly problem-solve. I thouroughly enjoyed my time at university.
 
-          I spent a lot of my free time working on the Purdue Utiity Project global development team and advocating for global engineering experiences as an Ambassador for both the Office of Proffessional Practice Global Engineering Programs and the Global Engineering Alliance for Research and Education.
+          I spent a lot of my free time working on the Purdue Utility Project global development team and advocating for student involvement in global engineering experiences as an Ambassador for both the Office of Proffessional Practice Global Engineering Programs and the Global Engineering Alliance for Research and Education.
 
       - layout: left
         title: ESTACA
@@ -135,14 +137,13 @@ content:
   - title: A Little More About Me
     layout: text
     # content: | # this will include new lines to allow paragraphs
-    #   Alongside my interests in networks and software engineering some of my other interests and hobbies are:
-    #   - Rock climbing
-    #   - Gaming
-    #   - Knitting
-    #   - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
+    Questions about the gap in my resume? I took some time to pursue personal interests in life & career. Check out Duckietown in my projects section to learn more about my delve into robotics & autonomy.
+
+    I also spent some time off-grid in the BVIs. I enjoy sailing and learning about boat systems, here are some photos of the adventure. 
+    #   LINK EX - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
 
     #   Look at this cool image  
-    #   ![Trees](/modern-resume-theme/images/landscape-trees.jpg "Trees")
+    #   PHOTO EX - ![Trees](/modern-resume-theme/images/landscape-trees.jpg "Trees")
 
 # Footer
 footer_show_references: false
