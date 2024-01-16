@@ -50,7 +50,7 @@ about_profile_image: # images/something.jpg
 about_content: | # this will include new lines to allow paragraphs
    Hi, my name's Anna and I'm a Mechanical Engineer. Most recently I've taken an interest in robotics & autonomy, working through the Duckietown curriculum of self-driving vehicles. I like programming, hands-on engineering and test, and cool tech.
    
-# I have also worked in process engineering from line-side support, capital projects, data analytics, to management. Throughout my career I've gained skills including design, test, computer programming, teamwork, and leadership. 
+  # I have also worked in process engineering from line-side support, capital projects, data analytics, to management. Throughout my career I've gained skills including design, test, computer programming, teamwork, and leadership. 
 
    I am most skilled in: <mark>Learning</mark> and <mark>Optimism</mark>
 
