@@ -136,10 +136,10 @@ content:
   
   - title: A Little More About Me
     layout: text
-    # content: | # this will include new lines to allow paragraphs
-    Questions about the gap in my resume? I took some time to pursue personal interests in life & career. Check out Duckietown in my projects section to learn more about my delve into robotics & autonomy.
+    content: | # this will include new lines to allow paragraphs
+      Questions about the gap in my resume? I took some time to pursue personal interests in life & career. Check out Duckietown in my projects section to learn more about my delve into robotics & autonomy.
 
-    I also spent some time off-grid in the BVIs. I enjoy sailing and learning about boat systems, here are some photos of the adventure. 
+      I also spent some time off-grid in the BVIs. I enjoy sailing and learning about boat systems, here are some photos of the adventure. 
     #   LINK EX - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
 
     #   Look at this cool image  
