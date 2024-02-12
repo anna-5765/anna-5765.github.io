@@ -108,7 +108,16 @@ content:
         quote: >
           Self-Driving Cars with Duckietown is a robotics and AI Massive Open Online Course hosted on edX, an online learning platform.
         description: | # this will include new lines to allow paragraphs
-          I started this course as a way of improving my technical repertoire and learning about robotics and programming. Through an intense learning approach, I gained experience with professional tools and workflows used in modern robotics such as <mark>Linux</mark> and terminal interfaces, using <mark>ROS</mark>, programming in <mark>Python</mark>, training computer vision <mark>neural networks</mark>, managing code with <mark>GitHub</mark>, incrementally developing solutions, creative troubleshooting, and testing solutions in simulation before the real world.
+          I started this course as a way of improving my technical repertoire and learning about robotics and programming. Through an intense learning approach, I gained experience with professional tools and workflows used in modern robotics such as:
+          - <mark>Linux</mark> 
+          - Terminal interfaces
+          - <mark>ROS</mark> 
+          - <mark>Python</mark>
+          - Computer vision & training <mark>Convolutional neural networks</mark>
+          - <mark>GitHub</mark>
+          - Incrementally developing solutions 
+          - Creative troubleshooting
+          - Testing solutions in simulation before the real world
 
           I also interacted with the community of peer learners and the staff on the course Slack and Stack Overflow. This includes asking for help and supporting others in answering peer questions.
       - layout: left
