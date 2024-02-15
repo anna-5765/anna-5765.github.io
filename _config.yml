@@ -147,19 +147,10 @@ content:
     layout: text
     content: | # this will include new lines to allow paragraphs
       In 2023-2024 I took some time to pursue personal interests in life & career. Check out Duckietown in my projects section to learn more about my delve into robotics & autonomy.
-      ![BVIs Stern](images/Sail_stern.jpeg "BVIs Stern")
-      1
-      ![BVIs Stern](./images/Sail_stern.jpeg "BVIs Stern")
-      2
-      I also spent some time off-grid in the British Virgin Islands. I enjoy sailing and learning about boat systems, here are some photos of the adventure. 
-      ![BVIs Stern](images/Sail_stern.jpeg "BVIs Stern")
-      3
-      ![BVIs Stern](../images/Sail_stern.jpeg "BVIs Stern")
-      4
+
       ![BVIs Stern](/images/Sail_stern.jpeg "BVIs Stern")
-      5
-    #   LINK EX - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
-      ![BVIs Stern](/images/Sail_stern.jpeg "BVIs Stern")
+      
+# LINK EX - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
 
 # Footer
 footer_show_references: false
