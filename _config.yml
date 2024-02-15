@@ -46,7 +46,7 @@ additional_links:
 
 # About Section
 about_title: About Me
-about_profile_image: # images/something.jpg
+about_profile_image: images/CanvaIcon.png
 about_content: | # this will include new lines to allow paragraphs
    Hi, my name's Anna and I'm a Mechanical Engineer. Most recently I've taken an interest in robotics & autonomy, working through the Duckietown curriculum of self-driving vehicles. I like programming, hands-on engineering and test, and learning something new.
 
