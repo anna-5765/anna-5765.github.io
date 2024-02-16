@@ -65,7 +65,8 @@ content:
           # - title:  anna-5765/aoc
           #   icon: fab fa-github
           #   url: github.com/anna-5765/aoc
-         description: A fun set of puzzles I try and complete to practice Python or learn a new programming language.
+         description: |
+            A fun set of puzzles I try and complete to practice Python or learn a new programming language.
           
       - layout: top-middle
         title: Duckietown
