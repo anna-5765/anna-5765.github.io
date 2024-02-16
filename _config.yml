@@ -99,17 +99,20 @@ content:
         sub_title: Leadership and Technical Development Rotational Program
 
       - layout: left
-        sub_title: LTDP 3: Section Manager 
+        sub_title: |
+           LTDP 3: Section Manager 
         caption: July 2020 - July 2021
         description: | # this will include new lines to allow paragraphs
 
       - layout: left
-        sub_title: LTDP 2: Manufacturing Engineer 
+        sub_title: |
+           LTDP 2: Manufacturing Engineer 
         caption: July 2019 - July 2020
         description: | # this will include new lines to allow paragraphs
 
       - layout: left
-        sub_title: LTDP 1: Operations Quality Engineer 
+        sub_title: |
+           LTDP 1: Operations Quality Engineer 
         caption: July 2018 - July 2019
         description: | # this will include new lines to allow paragraphs
         
