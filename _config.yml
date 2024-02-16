@@ -94,7 +94,8 @@ content:
         caption: July 2021 - February 2023
        # quote: >
         description: | # this will include new lines to allow paragraphs
-        
+
+      - layout: left
         sub_title: Leadership and Technical Development Rotational Program
         caption: July 2018 - July 2021
        # quote: >
@@ -104,7 +105,7 @@ content:
   - title: Education # Title for the section
     layout: list # Type of content section (list/text)
     content:
-      - layout: top-left
+      - layout: left
         title: |
           ETHx: ETH Zurich
         caption: November 2022 - November 2023
