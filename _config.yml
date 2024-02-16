@@ -50,7 +50,7 @@ about_profile_image: images/CanvaIcon.png
 about_content: | # this will include new lines to allow paragraphs
    Hi, my name's Anna and I'm a Mechanical Engineer. Most recently I've taken an interest in robotics & autonomy, working through the Duckietown curriculum of self-driving vehicles. I like programming, hands-on engineering and test, and learning something new.
 
-   I have also worked in process engineering from line-side support, capital projects, data analytics, to management. Throughout my career I've gained skills including design, test, computer programming, teamwork, and leadership. 
+# I have also worked in process engineering from line-side support, capital projects, data analytics, to management. Throughout my career I've gained skills including design, test, computer programming, teamwork, and leadership. 
 
 # I am most skilled in: <mark>Skill1</mark> and <mark>Skill2</mark>
 
@@ -94,6 +94,7 @@ content:
         caption: July 2021 - February 2023
        # quote: >
         description: | # this will include new lines to allow paragraphs
+         In this role, I facilitated proactive Manufacturing Risk Evaluations and Process Failure Mode and Effects Analysis risk assessments across all large engine platforms in both machining & assembly. I led a culture change toward improving the caliber of proactive risk identification & mitigation. We developed over 500 proactive quality recommended actions over 10+ major PFMEA assessments including new engine configurations and new machines. I also delivered gateway review information in presentations to update Engineering and Product Managers of program statuses relative to manufacturing quality and build readiness. To add in a bit more technical, hands-on work, I did a cleanliness test project for a new insourced engine housing.
 
       - layout: left
         sub_title: Leadership and Technical Development Rotational Program
