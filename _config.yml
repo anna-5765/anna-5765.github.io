@@ -102,7 +102,7 @@ content:
         caption: July 2021 - February 2023
        # quote: >
         description: | # this will include new lines to allow paragraphs
-         In the New Product Introduction Coordinator role, I facilitated proactive Manufacturing Risk Evaluations and Process Failure Mode and Effects Analysis risk assessments across all large engine platforms in both machining & assembly. I led a culture change toward improving the caliber of proactive risk identification & mitigation. We developed over 500 proactive quality recommended actions over 10+ major PFMEA assessments including new engine configurations and new machines. I also delivered gateway review information in presentations to update Engineering and Product Managers of program statuses relative to manufacturing quality and build readiness. To add in a bit more technical, hands-on work, I did a cleanliness test project for a new insourced engine housing.
+         I coordinated projects in Operations Quality related to new product at the Caterpillar Large Engine Center. This included facilitating 10+ major Process FMEA Risk Assessments, creating the cleanliness test process for a new insourced 3600 housing, validating the new housing's machining process per cleanliness standards through collecting and inspecting internal debris load data, and completing PFMEA action items as Quality representative during the runoff of a new automatic piston assembly cell.
 
       - layout: left
         sub_title: Leadership and Technical Development Rotational Program
@@ -114,22 +114,24 @@ content:
            LTDP 3: Section Manager 
         caption: July 2020 - July 2021
         description: | # this will include new lines to allow paragraphs
-         My final rotation, one all program participants need to complete, was a Section Manager position. I worked as the 2nd shift manager of Outbound Logistics in 2020 and Point of Use in 2021. These were at the Corinth Logistics Warehouse and Corinth Production Plant respectively for Caterpillar Remanufacturing. The Outbound Logistics team is expected to pull, packout, stage, and ship material to Mississippi Campus facilities, while Point of Use to inbound, put up, and move material interfacility. I engaged in proactive safety through standard work audits, continuous improvement cards, and stop-to-fix incidents for out of process situations; investigated quality defects; communicated timely and effectively; managed manpower flexibility and onboarding; and tried to leverage my technical background by designing a helpful handtool for the putaway team. I did a lot of stuff every day, but I think the most important was listening to my employees and following up with them about their needs.
+         I worked as the 2nd shift manager of Outbound Logistics in 2020 and Point of Use in 2021. These were at the warehouse and engine remanufacturing facility respectively. The Outbound Logistics team is expected to pull, packout, stage, and ship material to remanufacturing campus facilities, while Point of Use to inbound, put up, and move material interfacility.
 
+         As a section manager, I engaged in proactive safety through standard work audits, continuous improvement cards, and stop-to-fix incidents for out of process situations; investigated quality defects; communicated timely and effectively; managed manpower flexibility and onboarding; and tried to leverage my technical background by designing a helpful handtool for the putaway team. I did a lot of stuff every day, but I think the most important was listening to my employees and following up with them about their needs.
+      
       - layout: left
         sub_title: |
            LTDP 2: Manufacturing Engineer 
         caption: July 2019 - July 2020
         description: | # this will include new lines to allow paragraphs
-         Second in my rotations with Caterpillar, I completed what would be my favorite position as a Manufacturing Engineer at the Menominee Coupling Facility. I went from not knowing what a coupling was, to installing new semi-automatic assembly machines, to acting as line-side troubleshooting support for said machines (especially while they inevitably broke during their initial run phase), to running 3 more capital projects in machining. At a small facility, I had the opportunity to work on diverse projects: I completed projects with EHS upgrading the chemical storage area, did part cost analyses with Finance, worked through shipping logistics of a new machine with Supply Chain (during the middle of Covid no less), and was given action items to work through for our Six Sigma projects.
-
+         This was my favorite role while working at Caterpillar. At the coupling machining and assembly center, I acted as line side support for troubleshooting newly installed semi-automatic assembly machines, led 4 capital projects procuring additional new machinery,  redid the chemical storage area layout and labeling per GHS & HMIS standards, calculated part cost analysis with Finance, labeled 20+ work bars for specific product usage at the rack plating line, and updated tool cards in the Microsoft Access database for bending and oven operations.
+         
       - layout: left
         sub_title: |
            LTDP 1: Operations Quality Engineer 
         caption: July 2018 - July 2019
         description: | # this will include new lines to allow paragraphs
-         This was my first position out of college and first rotation in the Leadership and Technical Development Program. I enjoyed a variety of projects in a variety of different realms under Operations Quality at the Large Engine Center. While working in Supplier Quality, I created a webtool they still use today that crunches risk numbers based on leading indicators of a supplier part nonconformance, and aids in routing material through receiving inspection before being accepted into official Cat inventory. Within Internal Quality, I ran a machine shop metrology strategy project on the 3500 rod line, auditing and improving feature gauging details and data collection. Within Out-Plant Quality, I added 2 additional quality gates on the 3600 line through analyzing defect per unit data and ensuring the gate location in a close feedback loop relative to defect cause area.
-      
+         I worked in a few different realms of Quality as an engineer at the Large Engine Center. While working in Supplier Quality, I created a webtool they still use today that crunches risk numbers based on leading indicators of a supplier part nonconformance, and aids in routing material through receiving inspection before being accepted into official Cat inventory. Within Internal Quality, I ran a machine shop metrology strategy project on the 3500 rod line, auditing and improving feature gauging details and data collection. Within Out-Plant Quality, I added 2 additional quality gates on the 3600 line through analyzing defect per unit data and ensuring the gate location in a close feedback loop relative to defect cause area.
+  
   - title: Education # Title for the section
     layout: list # Type of content section (list/text)
     content:
