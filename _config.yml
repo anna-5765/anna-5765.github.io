@@ -162,7 +162,7 @@ content:
         description: | # this will include new lines to allow paragraphs
           During my time at Purdue I learned key skills that have I have taken through my career such as dedication, an intuition to how the science of the world works, and a curiosity to creativly problem-solve. I thouroughly enjoyed my time at university.
 
-          I spent a lot of my free time working on the Purdue Utility Project global development team and advocating for student involvement in global engineering experiences as an Ambassador for both the Office of Proffessional Practice Global Engineering Programs and the Global Engineering Alliance for Research and Education.
+          I spent a lot of my free time working on the Purdue Utility Project global development team, advocating for student involvement in global engineering experiences as an Ambassador for Global Engineering Programs, and staying involved with other outreach organizations such as volunteering for Purdue Space Day, Introduce a Girl to Engineering, and Women in Engineering.
 
       - layout: left
         title: ESTACA
@@ -190,11 +190,11 @@ content:
       
 # ![BVIs Stern](/images/Sail_stern.jpeg "BVIs Stern") ![BVIs Helm](/images/Sail_helm.jpeg "BVIs Helm")
       
-# LINK EX - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
+# LINK EXAMPLE - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
 
 # Footer
-footer_show_references: true
-references_title: Have a good one :)
+footer_show_references: false
+references_title:
 
 # Build settings
 remote_theme: sproogen/resume-theme
