@@ -144,41 +144,41 @@ content:
          The histogram filter part of this module was a bit harder. The graded sim for the State Estimation module was a successful lane following run using a histogram filter localization approximation. You use the edges the camera detects from the lane markers to approximate your location. The loop this time was a more advanced track of twists and turns. Here's a screenshot of me not going anywhere with the help pages up in the background.
 
          <div class="image-container50">
-           <img src="/images/vis_servo_5.png" alt="hist filter first attempt">
+           <img src="/images/state_est_5.png" alt="hist filter first attempt">
          </div>
 
          The above was actually a git conflict error, I learned, but with that resolved my attempts still met the same fatal end. The sim was evaluated by three attempts at the loop with different starting positions and directions.
 
          <div class="image-container50">
-           <img src="/images/vis_servo_6.png" alt="hist filter second attempt">
-           <img src="/images/vis_servo_7.png" alt="hist filter third attempt">
+           <img src="/images/state_est_6.png" alt="hist filter second attempt">
+           <img src="/images/state_est_7.png" alt="hist filter third attempt">
          </div>
 
          Ignoring the spirals, I wanted to figure out why my robot deviated so far outside of the center of the lane. With a bit of sleuthing, I figured out there was a significant amount of yellow color being detected in the grass. This is important because my robot localizes itself by generating a vote on where it thinks it is based off of each color and edge detection of the lane markers, which there showed to be a lot of the yellow ones where there shouldn't have been.
 
          <div class="image-container33">
-           <img src="/images/vis_servo_8.png" alt="Measurement likelihood lecture">
+           <img src="/images/state_est_8.png" alt="Measurement likelihood lecture">
          </div>
 
          In filtering out the grass color and honing the code further, my ability to stay in the center of the lane improved. I was however, still spiraling at some point.
 
          <div class="image-container50">
-           <img src="/images/vis_servo_9.png" alt="Hist filter out grass 1">
-           <img src="/images/vis_servo_10.png" alt="Hist filter out grass 2">
+           <img src="/images/state_est_9.png" alt="Hist filter out grass 1">
+           <img src="/images/state_est_10.png" alt="Hist filter out grass 2">
          </div>
 
          After a few days of trial and error on why my code was breaking, I realized I was facing a division error as I updated and normalized my belief and the denominator approached zero. I added an if statement to handle the error, and my robot and I were almost making full loops immediately.
 
          <div class="image-container33">
-           <img src="/images/vis_servo_11.png" alt="The worst hist loops youve ever seen">
+           <img src="/images/state_est_11.png" alt="The worst hist loops youve ever seen">
          </div>
 
          Lol just kidding. Not sure what happened there, but I think it had to do with something not setting up right in the simulation. A rerun gave a much smoother result. Additional shifting in my approach to propagating the centroids of where the new mass should be, or finding the new location vote from the histogram filter in the update stage, got me to some pretty solid runs.
 
          <div class="image-container33">
-           <img src="/images/vis_servo_12.png" alt="Hist filter out grass 1">
-           <img src="/images/vis_servo_13.png" alt="Hist filter out grass 2">
-           <img src="/images/vis_servo_14.png" alt="Hist filter out grass 2">
+           <img src="/images/state_est_12.png" alt="Hist filter out grass 1">
+           <img src="/images/state_est_13.png" alt="Hist filter out grass 2">
+           <img src="/images/state_est_14.png" alt="Hist filter out grass 2">
          </div>
          
       - layout: top-middle
