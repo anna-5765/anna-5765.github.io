@@ -79,7 +79,18 @@ content:
             icon: fab fa-github
             url: github.com/anna-5765/duckietown-lx/tree/mooc2022
         description: | # this will include new lines to allow paragraphs
-           
+         I recently passed a milestone I'm really proud of. It may be a small step into robotics & autonomy, but it's a big pursuit into intentionally  entering a transition phase in my career. ETHx's Self-Driving Cars with Duckietown is a learning experience of significant progression into self-driving vehicles for someone with an ME degree and basic understanding of robots and programming one. 
+
+         I wanted to take this course because it looked cool and hard and unfamiliar, and though it was uncertain if I'd like it or be good at it, I took it because I wanted to and I needed a challenge. I even committed to the physical robot portion because why not.
+
+         This is a story of struggle stippled with progression, growth, and little cumulative wins that were really satisfying. I found this course frustrating, enlightening, and everything in between. And I enjoyed being a part of it so much I now beta test for the next release version.
+
+         With a robot, one of the initial steps is hardware build and test. All of the course material is intended to be foundational for real-life applications, so it's neat to have the physical robot to send around your living room. Here's a photo of me building the robot and it initially only going in circles.
+
+         <div class="image-container">
+           <img src="/images/build_test_1.png" alt="Robot hardware build">
+           <img src="/images/build_test_2.png" alt="Robot build motor error">
+         </div>
 
       - layout: top-middle
         title: Purdue Utility Project
