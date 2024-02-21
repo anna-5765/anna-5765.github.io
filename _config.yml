@@ -69,7 +69,7 @@ content:
       #    description: |
       #       A fun set of puzzles I try and complete to practice Python or learn a new programming language.
           
-      - layout: left
+      - layout: top-left
         title: Duckietown
         caption: November 2022 - November 2023
         # link: add link here
