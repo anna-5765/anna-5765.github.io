@@ -122,11 +122,24 @@ content:
 
          Next, one of the coolest modules and one I can't pretend to understand fully-- object detection using deep learning models. I spent a lot of time reading and listening to lectures and youtube videos on advanced visual perception, loss functions, stochastic gradient descent, deep convolutional neural networks, etc. The jupyter notebooks were replaced with Google Colab this time, and I learned what was necessary to define a CNN using PyTorch, which I trained using YoloV5 and subsequently got recall and precision values up to high .8 and .9s respectively.  Here's a photo of my robot finding duckies. I found a few ways to trick it, but it was overall pretty good.
 
-         <div class="image-container33">
+         <div class="image-container50">
             <img src="/images/obj_det_1.png" alt="Duckies in camera view">
             <img src="/images/obj_det_2.png" alt="Duckies in computer vision">
          </div>
+
+         State estimation was the intro into theoretical statistics I didn't know I didn't know. I did go pretty deep into this, and even recognized when two variables were swapped in a small part of the notes (process model noise vs measurement model noise, it didn't matter for the exercise but I'll always know). Doing the heavy lifting upfront in lectures helped immensely when applying the Kalman filter and particle filter to simulated data. Once you use the right symbol for matrix multiplication, you can get a pretty on par Kalman filter estimate.
          
+         <div class="image-container33">
+            <img src="/images/state_est_1.png" alt="Kalman trial">
+            <img src="/images/state_est_2.png" alt="Kalman success">
+         </div>
+
+         Likewise with the particle filter.
+
+         <div class="image-container33">
+            <img src="/images/state_est_3.png" alt="Particle filter dot graph">
+            <img src="/images/state_est_4.png" alt="Particle filter line graph">
+         </div>
          
       - layout: top-middle
         title: Purdue Utility Project
