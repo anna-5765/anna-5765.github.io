@@ -87,10 +87,10 @@ content:
 
          With a robot, one of the initial steps is hardware build and test. All of the course material is intended to be foundational for real-life applications, so it's neat to have the physical robot to send around your living room. Here's a photo of me building the robot and it initially only going in circles.
 
-         <div class="image-container2">
-           <img src="/images/build_test_1.png" alt="Robot hardware build">
-           <img src="/images/build_test_2.png" alt="Robot build motor error">
-         </div>
+      # <div class="image-container2">
+         #   <img src="/images/build_test_1.png" alt="Robot hardware build">
+         #   <img src="/images/build_test_2.png" alt="Robot build motor error">
+         # </div>
 
       - layout: top-middle
         title: Purdue Utility Project
