@@ -69,7 +69,7 @@ content:
       #    description: |
       #       A fun set of puzzles I try and complete to practice Python or learn a new programming language.
           
-      - layout: top-left
+      - layout: left
         title: Duckietown
         caption: November 2022 - November 2023
         # link: add link here
@@ -87,7 +87,7 @@ content:
 
          With a robot, one of the initial steps is hardware build and test. All of the course material is intended to be foundational for real-life applications, so it's neat to have the physical robot to send around your living room. Here's a photo of me building the robot and it initially only going in circles.
 
-         <div class="image-container20">
+         <div class="image-container33">
            <img src="/images/build_test_1.png" alt="Robot hardware build">
            <img src="/images/build_test_2.png" alt="Robot build motor error">
          </div>
@@ -156,7 +156,7 @@ content:
 
          Ignoring the spirals, I wanted to figure out why my robot deviated so far outside of the center of the lane. With a bit of sleuthing, I figured out there was a significant amount of yellow color being detected in the grass. This is important because my robot localizes itself by generating a vote on where it thinks it is based off of each color and edge detection of the lane markers, which there showed to be a lot of the yellow ones where there shouldn't have been.
 
-         <div class="image-container33">
+         <div class="image-container50">
            <img src="/images/state_est_8.png" alt="Measurement likelihood lecture">
          </div>
 
@@ -183,7 +183,7 @@ content:
 
          The last modules introduce collision detection and path planning algorithms. Collision detection required a True/False statement on if static instances of a robot collided with its environment. I did pretty well approximating everything as a circle, but went for the true win branching out and using the separating axis theorem. Once I got my corner calculations sorted, victory was certain.
 
-         <div class="image-container33">
+         <div class="image-container50">
            <img src="/images/coll_det_1.png" alt="Approx as circle collision detection">
            <img src="/images/coll_det_2.png" alt="No wrong answers using SAT">
          </div>
