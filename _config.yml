@@ -69,7 +69,7 @@ content:
       #    description: |
       #       A fun set of puzzles I try and complete to practice Python or learn a new programming language.
           
-      - layout: top-middle
+      - layout: left
         title: Duckietown
         caption: November 2022 - November 2023
         # link: add link here
@@ -194,7 +194,7 @@ content:
 
          If you've made it this far, it feels right to shout out a thank you to my SO who supported me through this journey, helped me bounce ideas and debug, and gave me the license to follow my interests &#x2764;&#xFE0F;. Cheers to the next big thing.
          
-      - layout: top-middle
+      - layout: left
         title: Purdue Utility Project
         caption: November 2015 - June 2018
         # link: github.com/sproogen
