@@ -19,5 +19,6 @@
 
 .image-container2 img {
   width: 33%; /* Adjust as needed based on your layout */
-  height: 300;
+  max-height: 200px;
+  height: auto;
 }
