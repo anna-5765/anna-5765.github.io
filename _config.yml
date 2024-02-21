@@ -92,6 +92,7 @@ content:
            <img src="/images/build_test_2.png" alt="Robot build motor error">
          </div>
 
+
          An SD card reflash fixed the issue, but it was a good precursor to the troubleshooting efforts necessary to do something like this.
 
          Duckietown is structured on learning theories through short lecture videos on edX and practical applications through a sleek jupyter notebook setup. The course shell is downloaded to your computer, and the environment is controlled with docker containers.
@@ -104,9 +105,23 @@ content:
            <img src="/images/modcon_1.png" alt="Odometry">
          </div>
 
+
          Visual Lane Servoing is where the building begins in camera calibrations and filtering the image stream into useful information for self-driving. Sobel edge detection, Gaussian blur, color gradients, and image masking make for a decent lane detection in well marked road areas. These images I coded using the masking techniques effectively removed most of the outliers.
 
          <img src="/images/vis_servo_1.png" alt="Image filtration">
+
+         
+         Duckietown's model is learning theories and applying at least one of them to a graded simulation. Performance in simulation environments is used as graded markers at the end of each module. This entailed scripting the blank sections of the code on your own and running the simulation to help iterate and improve previous solutions before submissions. Using principles of image filtration, I coded the simulated robot around a small and large loop. As you can see my beginning masks and motor weight matrices were not very good, but they improved with iteration as I honed my color hsv values and motor weights. (mask images don't necessarily align with the loop run below).
+
+         <img src="/images/vis_servo_2.png" alt="Masks and loops">
+
+
+         A good lesson I learned also, is to know where your simulation environment differs from your real world. In this case the color schemes were pretty far off for white and needed to be tuned.
+
+         <div class="image-container50">
+           <img src="/images/vis_servo_3.png" alt="Sim vs real life">
+         </div>
+
          
       - layout: top-middle
         title: Purdue Utility Project
