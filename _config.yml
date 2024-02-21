@@ -87,7 +87,7 @@ content:
 
          With a robot, one of the initial steps is hardware build and test. All of the course material is intended to be foundational for real-life applications, so it's neat to have the physical robot to send around your living room. Here's a photo of me building the robot and it initially only going in circles.
 
-         <div class="image-container2">
+         <div class="image-container20">
            <img src="/images/build_test_1.png" alt="Robot hardware build">
            <img src="/images/build_test_2.png" alt="Robot build motor error">
          </div>
@@ -100,7 +100,7 @@ content:
 
          Modeling and control puts to use all the kinematic equations and odometry I love as an ME, and tops it off with PID controllers. I made sure I understood the differential drive EOMs again, calibrated my robot in this module testing values of gain and trim that provided a good driving experience, and coded a PID controller that set the robot on a given course after starting from an initial offset.
 
-         <div class="image-container">
+         <div class="image-container50">
            <img src="/images/modcon_1.png" alt="Odometry">
          </div>
          
@@ -208,7 +208,7 @@ content:
 
       I also spent some time off-grid in the British Virgin Islands. I enjoy sailing and learning about boat systems, here are some photos of the adventure.
 
-      <div class="image-container">
+      <div class="image-container33">
         <img src="/images/Sail_stern.jpeg" alt="BVIs off the stern">
         <img src="/images/Sail_helm.jpeg" alt="Helm station">
         <img src="/images/Sail_bow.jpeg" alt="En sail">
