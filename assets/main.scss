@@ -4,20 +4,29 @@
 
 @import 'modern-resume-theme';
 
-.image-container {
+.image-container33 {
   display: flex;
 }
 
-.image-container img {
+.image-container33 img {
   width: 33%; /* Adjust as needed based on your layout */
   height: auto;
 }
 
-.image-container2 {
+.image-container20 {
   display: flex;
 }
 
-.image-container2 img {
+.image-container20 img {
   width: 20%; /* Adjust as needed based on your layout */
+  height: auto;
+}
+
+.image-container50 {
+  display: flex;
+}
+
+.image-container50 img {
+  width: 50%; /* Adjust as needed based on your layout */
   height: auto;
 }
