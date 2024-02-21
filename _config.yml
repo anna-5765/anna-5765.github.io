@@ -169,17 +169,30 @@ content:
 
          After a few days of trial and error on why my code was breaking, I realized I was facing a division error as I updated and normalized my belief and the denominator approached zero. I added an if statement to handle the error, and my robot and I were almost making full loops immediately.
 
-         <div class="image-container33">
+         <div class="image-container50">
            <img src="/images/state_est_11.png" alt="The worst hist loops youve ever seen">
          </div>
 
          Lol just kidding. Not sure what happened there, but I think it had to do with something not setting up right in the simulation. A rerun gave a much smoother result. Additional shifting in my approach to propagating the centroids of where the new mass should be, or finding the new location vote from the histogram filter in the update stage, got me to some pretty solid runs.
 
          <div class="image-container33">
-           <img src="/images/state_est_12.png" alt="Hist filter out grass 1">
-           <img src="/images/state_est_13.png" alt="Hist filter out grass 2">
-           <img src="/images/state_est_14.png" alt="Hist filter out grass 2">
+           <img src="/images/state_est_12.png" alt="Hist lane following smoother">
+           <img src="/images/state_est_13.png" alt="Hist lane following even smoother">
+           <img src="/images/state_est_14.png" alt="Hist lane following smoothest">
          </div>
+
+         The last modules introduce collision detection and path planning algorithms. Collision detection required a True/False statement on if static instances of a robot collided with its environment. I did pretty well approximating everything as a circle, but went for the true win branching out and using the separating axis theorem. Once I got my corner calculations sorted, victory was certain.
+
+         <div class="image-container33">
+           <img src="/images/coll_det_1.png" alt="Approx as circle collision detection">
+           <img src="/images/coll_det_2.png" alt="No wrong answers using SAT">
+         </div>
+
+         Path planning was an intro into graph search and shortest path algorithms, including a code challenge using networkX. Reinforcement learning lectures building off of object detection closed out the class.
+
+         In summary, this was one of the most technically challenging, in-depth attempts I've made at a project using the basis of what I learned in college. Both putting in the time to understand the lectures and math as well as the code and unintentional learning curve items like Linux, ROS, Github, and using the terminal interface, I feel I'm now in a world where pushing the boundaries of what technology can do for us seems a little less daunting.
+
+         If you've made it this far, it feels right to shout out a thank you to my SO who supported me through this journey, helped me bounce ideas and debug, and gave me the license to follow my interests &#x2764;&#xFE0F;. Cheers to the next big thing.
          
       - layout: top-middle
         title: Purdue Utility Project
