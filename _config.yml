@@ -103,6 +103,10 @@ content:
          <div class="image-container50">
            <img src="/images/modcon_1.png" alt="Odometry">
          </div>
+
+         Visual Lane Servoing is where the building begins in camera calibrations and filtering the image stream into useful information for self-driving. Sobel edge detection, Gaussian blur, color gradients, and image masking make for a decent lane detection in well marked road areas. These images I coded using the masking techniques effectively removed most of the outliers.
+
+         <img src="/images/vis_servo_1.png" alt="Image filtration">
          
       - layout: top-middle
         title: Purdue Utility Project
