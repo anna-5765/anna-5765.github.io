@@ -92,6 +92,18 @@ content:
            <img src="/images/build_test_2.png" alt="Robot build motor error">
          </div>
 
+         An SD card reflash fixed the issue, but it was a good precursor to the troubleshooting efforts necessary to do something like this.
+
+         Duckietown is structured on learning theories through short lecture videos on edX and practical applications through a sleek jupyter notebook setup. The course shell is downloaded to your computer, and the environment is controlled with docker containers.
+
+         The first module of the course, towards autonomy, introduces the stateful architecture agent/controller model including the textbook perception, planning, and control modules.  It also includes filtering the camera image by color to find duckie obstacles and use simple motor commands to respond. Image filtration builds into more advanced techniques with the successive modules.
+
+         Modeling and control puts to use all the kinematic equations and odometry I love as an ME, and tops it off with PID controllers. I made sure I understood the differential drive EOMs again, calibrated my robot in this module testing values of gain and trim that provided a good driving experience, and coded a PID controller that set the robot on a given course after starting from an initial offset.
+
+         <div class="image-container">
+           <img src="/images/modcon_1.png" alt="Odometry">
+         </div>
+         
       - layout: top-middle
         title: Purdue Utility Project
         caption: November 2015 - June 2018
