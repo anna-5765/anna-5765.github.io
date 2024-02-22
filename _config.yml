@@ -197,13 +197,22 @@ content:
       - layout: top-middle
         title: Purdue Utility Project
         caption: November 2015 - June 2018
-        # link: github.com/sproogen
+        # link: [link here]
         # link_text: Project Website
         additional_links:
-          # - title:  sproogen/modern-resume-theme
+          # - title:  [link title]
           #   icon: fab fa-github
-          #   url: github.com/sproogen/modern-resume-theme
- 
+          #   url: [link here]
+        description:
+          Purdue Utility Project is a Global Development Team associated with Purdue and beyond in problem-solving agricultural mechanization. It iterates and tests Basic Utility Vehicle designs with targeted applications in rural farming. I became a part of this team my sophomore year and grew considerably in part. I built prototypes with senior teams in the workshop, cutting, welding, drilling, and painting where needed; interned my junior year for Mobile Agricultural Power Solutions, an associated company started by grad students, where I did plowing application field-test work in Kenya as well as back on campus; designed and built my own BUV with an inspiring group of engineers as our senior design project; applied for and won a $25K grant to expand our reach with the project; and with the grant, built more of our designs with the development team at a technical vocational school back in Kenya.
+
+          <img src="/images/tumaini_all.png" alt="Tumaini Center group photo">
+
+          <div class="image-container50">
+           <img src="/images/sd_poster.JPG" alt="Me at the poster session">
+           <img src="/images/sdgroup_workshop.JPG" alt="Senior design group in the workshop">
+          </div>
+
   - title: Experience # Title for the section
     layout: list # Type of content section (list/text)
     content:
