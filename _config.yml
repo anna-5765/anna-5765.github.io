@@ -55,167 +55,38 @@ about_content: | # this will include new lines to allow paragraphs
 # I am most skilled in: <mark>Skill1</mark> and <mark>Skill2</mark>
 
 content:
-  - title: Projects # Title for the section
-    layout: list # Type of content section (list/text)
-    content:
-    
-      # - layout: top-middle
-      #   title: Advent of Code
-      #   caption: October 2023 - Present
-      #   additional_links:
-      #     # - title:  anna-5765/aoc
-      #     #   icon: fab fa-github
-      #     #   url: github.com/anna-5765/aoc
-      #    description: |
-      #       A fun set of puzzles I try and complete to practice Python or learn a new programming language.
-          
-      - layout: top-middle
-        title: Duckietown
-        caption: November 2022 - November 2023
-        # link: add link here
-        # link_text: Project Website
-        additional_links:
-          - title:  anna-5765/duckietown-lx
-            icon: fab fa-github
-            url: github.com/anna-5765/duckietown-lx/tree/mooc2022
-        description: | # this will include new lines to allow paragraphs
-         I recently passed a milestone I'm really proud of. It may be a small step into robotics & autonomy, but it's a big pursuit into intentionally  entering a transition phase in my career. ETHx's Self-Driving Cars with Duckietown is a learning experience of significant progression into self-driving vehicles for someone with an ME degree and basic understanding of robots and programming one. 
-
-         I wanted to take this course because it looked cool and hard and unfamiliar, and though it was uncertain if I'd like it or be good at it, I took it because I wanted to and I needed a challenge. I even committed to the physical robot portion because why not.
-
-         This is a story of struggle stippled with progression, growth, and little cumulative wins that were really satisfying. I found this course frustrating, enlightening, and everything in between. And I enjoyed being a part of it so much I now beta test for the next release version.
-
-         With a robot, one of the initial steps is hardware build and test. All of the course material is intended to be foundational for real-life applications, so it's neat to have the physical robot to send around your living room. Here's a photo of me building the robot and it initially only going in circles.
-
-         <div class="image-container33">
-           <img src="/images/build_test_1.png" alt="Robot hardware build">
-           <img src="/images/build_test_2.png" alt="Robot build motor error">
-         </div>
-
-         An SD card reflash fixed the issue, but it was a good precursor to the troubleshooting efforts necessary to do something like this.
-
-         Duckietown is structured on learning theories through short lecture videos on edX and practical applications through a sleek jupyter notebook setup. The course shell is downloaded to your computer, and the environment is controlled with docker containers.
-
-         The first module of the course, towards autonomy, introduces the stateful architecture agent/controller model including the textbook perception, planning, and control modules.  It also includes filtering the camera image by color to find duckie obstacles and use simple motor commands to respond. Image filtration builds into more advanced techniques with the successive modules.
-
-         Modeling and control puts to use all the kinematic equations and odometry I love as an ME, and tops it off with PID controllers. I made sure I understood the differential drive EOMs again, calibrated my robot in this module testing values of gain and trim that provided a good driving experience, and coded a PID controller that set the robot on a given course after starting from an initial offset.
-
-         <div class="image-container50">
-           <img src="/images/modcon_1.png" alt="Odometry">
-         </div>
-
-         Visual Lane Servoing is where the building begins in camera calibrations and filtering the image stream into useful information for self-driving. Sobel edge detection, Gaussian blur, color gradients, and image masking make for a decent lane detection in well marked road areas. These images I coded using the masking techniques effectively removed most of the outliers.
-
-         <img src="/images/vis_servo_1.png" alt="Image filtration">
-         
-         Duckietown's model is learning theories and applying at least one of them to a graded simulation. Performance in simulation environments is used as graded markers at the end of each module. This entailed scripting the blank sections of the code on your own and running the simulation to help iterate and improve previous solutions before submissions. Using principles of image filtration, I coded the simulated robot around a small and large loop. As you can see my beginning masks and motor weight matrices were not very good, but they improved with iteration as I honed my color hsv values and motor weights. (mask images don't necessarily align with the loop run below).
-
-         <div class="image-container50">
-            <img src="/images/vis_servo_2.png" alt="Masks and loops">
-         </div>
-         
-         A good lesson I learned also, is to know where your simulation environment differs from your real world. In this case the color schemes were pretty far off for white and needed to be tuned.
-
-         <div class="image-container50">
-           <img src="/images/vis_servo_3.png" alt="Sim vs real life">
-         </div>
-
-         Next, one of the coolest modules and one I can't pretend to understand fully-- object detection using deep learning models. I spent a lot of time reading and listening to lectures and youtube videos on advanced visual perception, loss functions, stochastic gradient descent, deep convolutional neural networks, etc. The jupyter notebooks were replaced with Google Colab this time, and I learned what was necessary to define a CNN using PyTorch, which I trained using YoloV5 and subsequently got recall and precision values up to high .8 and .9s respectively.  Here's a photo of my robot finding duckies. I found a few ways to trick it, but it was overall pretty good.
-
-         <div class="image-container33">
-            <img src="/images/obj_det_1.png" alt="Duckies in camera view">
-            <img src="/images/obj_det_2.png" alt="Duckies in computer vision">
-         </div>
-
-         State estimation was the intro into theoretical statistics I didn't know I didn't know. I did go pretty deep into this, and even recognized when two variables were swapped in a small part of the notes (process model noise vs measurement model noise, it didn't matter for the exercise but I'll always know). Doing the heavy lifting upfront in lectures helped immensely when applying the Kalman filter and particle filter to simulated data. Once you use the right symbol for matrix multiplication, you can get a pretty on par Kalman filter estimate.
-         
-         <div class="image-container33">
-            <img src="/images/state_est_1.png" alt="Kalman trial">
-            <img src="/images/state_est_2.png" alt="Kalman success">
-         </div>
-
-         Likewise with the particle filter.
-
-         <div class="image-container33">
-            <img src="/images/state_est_3.png" alt="Particle filter dot graph">
-            <img src="/images/state_est_4.png" alt="Particle filter line graph">
-         </div>
-
-         The histogram filter part of this module was a bit harder. The graded sim for the State Estimation module was a successful lane following run using a histogram filter localization approximation. You use the edges the camera detects from the lane markers to approximate your location. The loop this time was a more advanced track of twists and turns. Here's a screenshot of me not going anywhere with the help pages up in the background.
-
-         <div class="image-container50">
-           <img src="/images/state_est_5.png" alt="hist filter first attempt">
-         </div>
-
-         The above was actually a git conflict error, I learned, but with that resolved my attempts still met the same fatal end. The sim was evaluated by three attempts at the loop with different starting positions and directions.
-
-         <div class="image-container50">
-           <img src="/images/state_est_6.png" alt="hist filter second attempt">
-           <img src="/images/state_est_7.png" alt="hist filter third attempt">
-         </div>
-
-         Ignoring the spirals, I wanted to figure out why my robot deviated so far outside of the center of the lane. With a bit of sleuthing, I figured out there was a significant amount of yellow color being detected in the grass. This is important because my robot localizes itself by generating a vote on where it thinks it is based off of each color and edge detection of the lane markers, which there showed to be a lot of the yellow ones where there shouldn't have been.
-
-         <div class="image-container50">
-           <img src="/images/state_est_8.png" alt="Measurement likelihood lecture">
-         </div>
-
-         In filtering out the grass color and honing the code further, my ability to stay in the center of the lane improved. I was however, still spiraling at some point.
-
-         <div class="image-container50">
-           <img src="/images/state_est_9.png" alt="Hist filter out grass 1">
-           <img src="/images/state_est_10.png" alt="Hist filter out grass 2">
-         </div>
-
-         After a few days of trial and error on why my code was breaking, I realized I was facing a division error as I updated and normalized my belief and the denominator approached zero. I added an if statement to handle the error, and my robot and I were almost making full loops immediately.
-
-         <div class="image-container50">
-           <img src="/images/state_est_11.png" alt="The worst hist loops youve ever seen">
-         </div>
-
-         Lol just kidding. Not sure what happened there, but I think it had to do with something not setting up right in the simulation. A rerun gave a much smoother result. Additional shifting in my approach to propagating the centroids of where the new mass should be, or finding the new location vote from the histogram filter in the update stage, got me to some pretty solid runs.
-
-         <div class="image-container33">
-           <img src="/images/state_est_12.png" alt="Hist lane following smoother">
-           <img src="/images/state_est_13.png" alt="Hist lane following even smoother">
-           <img src="/images/state_est_14.png" alt="Hist lane following smoothest">
-         </div>
-
-         The last modules introduce collision detection and path planning algorithms. Collision detection required a True/False statement on if static instances of a robot collided with its environment. I did pretty well approximating everything as a circle, but went for the true win branching out and using the separating axis theorem. Once I got my corner calculations sorted, victory was certain.
-
-         <div class="image-container50">
-           <img src="/images/coll_det_1.png" alt="Approx as circle collision detection">
-           <img src="/images/coll_det_2.png" alt="No wrong answers using SAT">
-         </div>
-
-         Path planning was an intro into graph search and shortest path algorithms, including a code challenge using networkX. Reinforcement learning lectures building off of object detection closed out the class.
-
-         In summary, this was one of the most technically challenging, in-depth attempts I've made at a project using the basis of what I learned in college. Both putting in the time to understand the lectures and math as well as the code and unintentional learning curve items like Linux, ROS, Github, and using the terminal interface, I feel I'm now in a world where pushing the boundaries of what technology can do for us seems a little less daunting.
-
-         If you've made it this far, it feels right to shout out a thank you to my SO who supported me through this journey, helped me bounce ideas and debug, and gave me the license to follow my interests &#x2764;&#xFE0F;. Cheers to the next big thing.
-         
-      - layout: top-middle
-        title: Purdue Utility Project
-        caption: November 2015 - June 2018
-        # link: [link here]
-        # link_text: Project Website
-        additional_links:
-          # - title:  [link title]
-          #   icon: fab fa-github
-          #   url: [link here]
-        description:
-          Purdue Utility Project is a Global Development Team associated with Purdue and beyond in problem-solving agricultural mechanization. It iterates and tests Basic Utility Vehicle designs with targeted applications in rural farming. I became a part of this team my sophomore year and grew considerably in part. I built prototypes with senior teams in the workshop, cutting, welding, drilling, and painting where needed; interned my junior year for Mobile Agricultural Power Solutions, an associated company started by grad students, where I did plowing application field-test work in Kenya as well as back on campus; designed and built my own BUV with an inspiring group of engineers as our senior design project; applied for and won a $25K grant to expand our reach with the project; and with the grant, built more of our designs with the development team at a technical vocational school back in Kenya.
-
-          <img src="/images/tumaini_all.png" alt="Tumaini Center group photo">
-
-          <div class="image-container50">
-           <img src="/images/sd_poster.JPG" alt="Me at the poster session">
-           <img src="/images/sdgroup_workshop.JPG" alt="Senior design group in the workshop">
-          </div>
-
   - title: Experience # Title for the section
     layout: list # Type of content section (list/text)
     content:
+      - layout: left
+        title: |
+          ETHx: Self-Driving Cars with Duckietown
+        sub_title: Beta Tester
+        caption: December 2023 - Present
+        description: |
+         I run outlined tests and report outcomes and troubleshooting efforts for the new Duckietown release version.
+      
+      - layout: left
+        title: |
+          ETHx: ETH Zürich
+        caption: November 2022 - November 2023
+        sub_title: Self-Driving Cars with Duckietown
+        quote: >
+          ETHx is an online learning initiative of ETH Zürich. Self-Driving Cars with Duckietown is a robotics and AI Massive Open Online Course hosted on edX, an online learning platform.
+        description: | # this will include new lines to allow paragraphs
+          I started this course as a way of improving my technical repertoire and learning about robotics and programming. Through an intense learning approach, I gained experience with professional tools and workflows used in modern robotics such as:
+          - <mark>Linux</mark> 
+          - Terminal interfaces
+          - <mark>ROS</mark> 
+          - <mark>Python</mark>
+          - Computer vision & training <mark>convolutional neural networks</mark>
+          - <mark>GitHub</mark>
+          - Incrementally developing solutions 
+          - Creative troubleshooting
+          - Testing solutions in simulation before the real world
+
+          I also interacted with the community of peer learners and the staff on the course Slack and Stack Overflow. This includes asking for help and supporting others in answering peer questions.      
+       
       - layout: left
         title: Caterpillar
         link: 
@@ -258,26 +129,6 @@ content:
     layout: list # Type of content section (list/text)
     content:
       - layout: left
-        title: |
-          ETHx: ETH Zurich
-        caption: November 2022 - November 2023
-        sub_title: Self-Driving Cars with Duckietown
-        quote: >
-          Self-Driving Cars with Duckietown is a robotics and AI Massive Open Online Course hosted on edX, an online learning platform.
-        description: | # this will include new lines to allow paragraphs
-          I started this course as a way of improving my technical repertoire and learning about robotics and programming. Through an intense learning approach, I gained experience with professional tools and workflows used in modern robotics such as:
-          - <mark>Linux</mark> 
-          - Terminal interfaces
-          - <mark>ROS</mark> 
-          - <mark>Python</mark>
-          - Computer vision & training <mark>convolutional neural networks</mark>
-          - <mark>GitHub</mark>
-          - Incrementally developing solutions 
-          - Creative troubleshooting
-          - Testing solutions in simulation before the real world
-
-          I also interacted with the community of peer learners and the staff on the course Slack and Stack Overflow. This includes asking for help and supporting others in answering peer questions.
-      - layout: left
         title: Purdue University
         caption: August 2014 - May 2018
         sub_title: | 
@@ -299,7 +150,158 @@ content:
           This was a study abroad semester for me that amplified my engineering basis as well as my cultural understandings.
           
           Modules included Computer Aided Design (<mark>CATIA</mark>), Signal Processing (<mark>Matlab</mark>), Computational Fluid Dynamics (<mark>STAR-CCM+</mark>), Hydraulic Systems (<mark>AmeSim</mark>), Structural Design (FEM Simulation with CATIA), Technical Project, and French Language and Culture.
-  
+    
+  - title: Projects # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+    
+      # - layout: top-middle
+      #   title: Advent of Code
+      #   caption: October 2023 - Present
+      #   additional_links:
+      #     # - title:  anna-5765/aoc
+      #     #   icon: fab fa-github
+      #     #   url: github.com/anna-5765/aoc
+      #    description: |
+      #       A fun set of puzzles I try and complete to practice Python or learn a new programming language.   
+      
+      - layout: top
+        title: Duckietown
+        caption: November 2022 - November 2023
+          # <div class="shape"> # project tag
+          #   <p>project</p>
+          # </div>
+        # link: add link here
+        # link_text: Project Website
+        additional_links:
+          - title:  anna-5765/duckietown-lx
+            icon: fab fa-github
+            url: github.com/anna-5765/duckietown-lx/tree/mooc2022 
+        description: | # this will include new lines to allow paragraphs
+         I recently passed a milestone I'm really proud of. I completed ETHx's Self-Driving Cars with Duckietown, an online course in robotics and autonomy.
+
+         I wanted to take this course because I was interested in robotics and computer vision, and this looked like a really great entry. It also included course work in both a simulated and physical robot environment, which is a fun way to learn. I kept some of the struggle in the story too, as this course wasn't easy, but it was a guide to a lot of growth throughout.
+
+         With a robot, one of the initial steps is hardware build and test. All of the course material is intended to be foundational for real-life applications, so it's neat to have the physical robot to send around your living room. Here's a photo of me building the robot and it initially only going in circles.
+
+         <div class="image-container20">
+           <img src="/images/build_test_1.png" alt="Robot hardware build">
+           <img src="/images/build_test_2.png" alt="Robot build motor error">
+         </div>
+
+         An SD card reflash fixed the issue, but it was a good precursor to the troubleshooting efforts necessary to do something like this.
+
+         Duckietown is structured on learning theories through short lecture videos on edX and practical applications through a sleek jupyter notebook setup. The course shell is downloaded to your computer, and the environment is controlled with docker containers.
+
+         The first module of the course, towards autonomy, introduces the stateful architecture agent/controller model including the textbook perception, planning, and control modules.  It also includes filtering the camera image by color to find duckie obstacles and use simple motor commands to respond. Image filtration builds into more advanced techniques with the successive modules.
+
+         Modeling and control puts to use all the kinematic equations and odometry I love as an ME, and tops it off with PID controllers. I made sure I understood the differential drive EOMs again, calibrated my robot in this module testing values of gain and trim that provided a good driving experience, and coded a PID controller that set the robot on a given course after starting from an initial offset.
+
+         <div class="image-container50">
+           <img src="/images/modcon_1.png" alt="Odometry">
+         </div>
+
+         Visual Lane Servoing is where the building begins in camera calibrations and filtering the image stream into useful information for self-driving. Sobel edge detection, Gaussian blur, color gradients, and image masking make for a decent lane detection in well marked road areas. These images I coded using the masking techniques effectively removed most of the outliers.
+
+         <img src="/images/vis_servo_1.png" alt="Image filtration">
+         
+         Duckietown's model is learning theories and applying at least one of them to a graded simulation. Performance in simulation environments is used as graded markers at the end of each module. This entailed scripting the blank sections of the code on your own and running the simulation to help iterate and improve previous solutions before submissions. Using principles of image filtration, I coded the simulated robot around a small and large loop. As you can see my beginning masks and motor weight matrices were not very good, but they improved with iteration as I honed my color hsv values and motor weights. (mask images don't necessarily align with the loop run below).
+
+         <div class="image-container50">
+            <img src="/images/vis_servo_2.png" alt="Masks and loops">
+         </div>
+         
+         A good lesson I learned also, is to know where your simulation environment differs from your real world. In this case the color schemes were pretty far off for white and needed to be tuned.
+
+         <div class="image-container50">
+           <img src="/images/vis_servo_3.png" alt="Sim vs real life">
+         </div>
+
+         Next, one of the coolest modules and one I can't pretend to understand fully-- object detection using deep learning models. I spent a lot of time reading and listening to lectures and youtube videos on advanced visual perception, loss functions, stochastic gradient descent, deep convolutional neural networks, etc. The jupyter notebooks were replaced with Google Colab this time, and I learned what was necessary to define a CNN using PyTorch, which I trained using YoloV5 and subsequently got recall and precision values up to high .8 and .9s respectively.  Here's a photo of my robot finding duckies. I found a few ways to trick it, but it was overall pretty good.
+
+         <div class="image-container33">
+            <img src="/images/obj_det_1.png" alt="Duckies in camera view">
+            <img src="/images/obj_det_2.png" alt="Duckies in computer vision">
+         </div>
+
+         State estimation was the intro into theoretical statistics I didn't know I didn't know. I did go pretty deep into this trying to understand. Doing the heavy lifting upfront in lectures helped immensely when applying the Kalman filter and particle filter to simulated data. Once you use the right symbol for matrix multiplication, you can get a pretty on par Kalman filter estimate.
+
+         <div class="image-container33">
+            <img src="/images/state_est_1.png" alt="Kalman trial">
+            <img src="/images/state_est_2.png" alt="Kalman success">
+         </div>
+
+         Likewise with the particle filter.
+
+         <div class="image-container33">
+            <img src="/images/state_est_3.png" alt="Particle filter dot graph">
+            <img src="/images/state_est_4.png" alt="Particle filter line graph">
+         </div>
+
+         The histogram filter part of this module was a bit harder. The graded sim for the State Estimation module was a successful lane following run using a histogram filter localization approximation. You use the edges the camera detects from the lane markers to approximate your location. The loop this time was a more advanced track of twists and turns. The sim was evaluated by three attempts at the loop with different starting positions and directions. My first attempts were not amazing, veering off track and spiraling.
+
+         <div class="image-container50">
+           <img src="/images/state_est_6.png" alt="hist filter second attempt">
+           <img src="/images/state_est_7.png" alt="hist filter third attempt">
+         </div>
+
+         Ignoring the spirals, I wanted to figure out why my robot deviated so far outside of the center of the lane. With a bit of sleuthing, I figured out there was a significant amount of yellow color being detected in the grass. This is important because my robot localizes itself by generating a vote on where it thinks it is based off of each color and edge detection of the lane markers, which there showed to be a lot of the yellow ones where there shouldn't have been.
+
+         <div class="image-container50">
+           <img src="/images/state_est_8.png" alt="Measurement likelihood lecture">
+         </div>
+
+         In filtering out the grass color and honing the code further, my ability to stay in the center of the lane improved. I was however, still spiraling at some point.
+
+         <div class="image-container50">
+           <img src="/images/state_est_9.png" alt="Hist filter out grass 1">
+           <img src="/images/state_est_10.png" alt="Hist filter out grass 2">
+         </div>
+
+         After a few days of trial and error on why my code was breaking, I realized I was facing a division error as I updated and normalized my belief and the denominator approached zero. I added an if statement to handle the error, and my robot and I were almost making full loops immediately.
+
+         <div class="image-container50">
+           <img src="/images/state_est_11.png" alt="The worst hist loops youve ever seen">
+         </div>
+
+         Kidding, I'm not sure what exactly happened here, though I think it had to do with something not setting up right in the simulation. A rerun gave a much smoother result. Additional shifting in my approach to propagating the centroids of where the new mass should be, or finding the new location vote from the histogram filter in the update stage, got me to some pretty solid runs.
+
+         <div class="image-container33">
+           <img src="/images/state_est_12.png" alt="Hist lane following smoother">
+           <img src="/images/state_est_13.png" alt="Hist lane following even smoother">
+           <img src="/images/state_est_14.png" alt="Hist lane following smoothest">
+         </div>
+
+         The last modules introduce collision detection and path planning algorithms. Collision detection required a True/False statement on if static instances of a robot collided with its environment. I did pretty well approximating everything as a circle, but went for the true win branching out and using the separating axis theorem. Once I got my corner calculations sorted, victory was certain.
+
+         <div class="image-container50">
+           <img src="/images/coll_det_1.png" alt="Approx as circle collision detection">
+           <img src="/images/coll_det_2.png" alt="No wrong answers using SAT">
+         </div>
+
+         Path planning was an intro into graph search and shortest path algorithms, including a code challenge using networkX. Reinforcement learning lectures building off of object detection closed out the class.
+
+         In summary, this was one of the most technically challenging, in-depth attempts I've made at a project using the basis of what I learned in college. Both putting in the time to understand the lectures and math as well as the code and unintentional learning curve items like Linux, ROS, Github, and using the terminal interface, I feel I'm now in a world where pushing the boundaries of what technology can do for us seems a little less daunting.
+
+      - layout: top
+        title: Purdue Utility Project
+        caption: November 2015 - June 2018
+        # link: [link here]
+        # link_text: Project Website
+        additional_links:
+          # - title:  [link title]
+          #   icon: fab fa-github
+          #   url: [link here]
+        description:
+          Purdue Utility Project is a Global Development Team associated with Purdue and beyond in problem-solving agricultural mechanization. It iterates and tests Basic Utility Vehicle designs with targeted applications in rural farming. I became a part of this team my sophomore year and grew considerably in part. I built prototypes with senior teams in the workshop, cutting, welding, drilling, and painting where needed; interned my junior year for Mobile Agricultural Power Solutions, an associated company started by grad students, where I did plowing application field-test work in Kenya as well as back on campus; designed and built my own BUV with an inspiring group of engineers as our senior design project; applied for and won a $25K grant to expand our reach with the project; and with the grant, built more of our designs with the development team at a technical vocational school back in Kenya.
+
+          <img src="/images/tumaini_all.png" alt="Tumaini Center group photo">
+
+          <div class="image-container50">
+           <img src="/images/sd_poster.JPG" alt="Me at the poster session">
+           <img src="/images/sdgroup_workshop.JPG" alt="Senior design group in the workshop">
+          </div>
+
   - title: A Little More About Me
     layout: text
     content: | # this will include new lines to allow paragraphs

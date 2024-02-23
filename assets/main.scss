@@ -30,3 +30,18 @@
   width: 50%; /* Adjust as needed based on your layout */
   height: auto;
 }
+
+.shape {
+  background-color: pink;
+  width: 60px;
+  height: 20px;
+  border-radius: 2px; /* Add rounded corners */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shape p {
+  color: rgb(134, 60, 118);
+  font-size: 5px;
+}
