@@ -109,7 +109,7 @@ content:
         description: | # this will include new lines to allow paragraphs
          I worked as the 2nd shift manager of Outbound Logistics in 2020 and Point of Use in 2021. These were at the warehouse and engine remanufacturing facility respectively. The Outbound Logistics team is expected to pull, packout, stage, and ship material to remanufacturing campus facilities, while Point of Use to inbound, put up, and move material interfacility.
 
-         As a section manager, I engaged in proactive safety through standard work audits, continuous improvement cards, and stop-to-fix incidents for out of process situations; investigated quality defects; communicated timely and effectively; managed manpower flexibility and onboarding; and tried to leverage my technical background by designing a helpful handtool for the putaway team. I did a lot of stuff every day, but I think the most important was listening to my employees and following up with them about their needs.
+         As a section manager, I engaged in proactive safety through standard work audits, continuous improvement cards, and stop-to-fix incidents for out of process situations; investigated quality defects; communicated timely and effectively; managed manpower flexibility and onboarding; and leveraged my technical background by designing a helpful handtool for the putaway team. I did a lot of stuff every day, but I think the most important was listening to my employees and following up with them about their needs.
       
       - layout: left
         sub_title: |
@@ -123,7 +123,7 @@ content:
            LTDP 1: Operations Quality Engineer 
         caption: July 2018 - July 2019
         description: | # this will include new lines to allow paragraphs
-         I worked in a few different realms of Quality as an engineer at the Large Engine Center. While working in Supplier Quality, I created a webtool they still use today that crunches risk numbers based on leading indicators of a supplier part nonconformance, and aids in routing material through receiving inspection before being accepted into official Cat inventory. Within Internal Quality, I ran a machine shop metrology strategy project on the 3500 rod line, auditing and improving feature gauging details and data collection. Within Out-Plant Quality, I added 2 additional quality gates on the 3600 line through analyzing defect per unit data and ensuring the gate location in a close feedback loop relative to defect cause area.
+         I worked in a few different realms of Quality as an engineer at the Large Engine Center. While working in Supplier Quality, I created a webtool they still use today that runs an algorithm based on leading indicators of a supplier part nonconformance, and aids in routing material through receiving inspection before being accepted into official Cat inventory. Within Internal Quality, I ran a machine shop metrology strategy project on the 3500 rod line, auditing and improving feature gauging details and data collection. Within Out-Plant Quality, I added 2 additional quality gates on the 3600 line through analyzing defect per unit data and ensuring the gate location in a close feedback loop relative to defect cause area.
   
   - title: Education # Title for the section
     layout: list # Type of content section (list/text)
@@ -136,9 +136,9 @@ content:
         # quote: >
         #   insert quote text
         description: | # this will include new lines to allow paragraphs
-          During my time at Purdue I learned key skills that have I have taken through my career such as dedication, an intuition to how the science of the world works, and a curiosity to creativly problem-solve. I thouroughly enjoyed my time at university.
+          During my time at Purdue I learned key skills that have I have taken through my career such as dedication, an intuition to how the science of the world works, and a curiosity to creativly problem-solve.
 
-          I spent a lot of my free time working on the Purdue Utility Project global development team, advocating for student involvement in global engineering experiences as an Ambassador for Global Engineering Programs, and staying involved with other outreach organizations such as volunteering for Purdue Space Day, Introduce a Girl to Engineering, and Women in Engineering.
+          I spent a lot of my free time working on the Purdue Utility Project global development team fabricating basic utility vehicles, advocating for student involvement in global engineering experiences as an Ambassador for Global Engineering Programs, and staying involved with other outreach organizations such as volunteering for Purdue Space Day, Introduce a Girl to Engineering, and Women in Engineering.
 
       - layout: left
         title: ESTACA
@@ -180,7 +180,7 @@ content:
         description: | # this will include new lines to allow paragraphs
          I recently passed a milestone I'm really proud of. I completed ETHx's Self-Driving Cars with Duckietown, an online course in robotics and autonomy.
 
-         I wanted to take this course because I was interested in robotics and computer vision, and this looked like a really great entry. It also included course work in both a simulated and physical robot environment, which is a fun way to learn. I kept some of the struggle in the story too, as this course wasn't easy, but it was a guide to a lot of growth throughout.
+         I wanted to take this course because I was interested in robotics and computer vision, and this looked like a really great entry. It also included course work in both a simulated and physical robot environment, which is a fun way to learn. This course wasn't easy, as I describe in later sections I learned to creatively problem solve many unfamiliar issues, but it was a guide to a lot of growth throughout.
 
          With a robot, one of the initial steps is hardware build and test. All of the course material is intended to be foundational for real-life applications, so it's neat to have the physical robot to send around your living room. Here's a photo of me building the robot and it initially only going in circles.
 
@@ -195,7 +195,7 @@ content:
 
          The first module of the course, towards autonomy, introduces the stateful architecture agent/controller model including the textbook perception, planning, and control modules.  It also includes filtering the camera image by color to find duckie obstacles and use simple motor commands to respond. Image filtration builds into more advanced techniques with the successive modules.
 
-         Modeling and control puts to use all the kinematic equations and odometry I love as an ME, and tops it off with PID controllers. I made sure I understood the differential drive EOMs again, calibrated my robot in this module testing values of gain and trim that provided a good driving experience, and coded a PID controller that set the robot on a given course after starting from an initial offset.
+         Modeling and control puts to use all the kinematic equations and odometry I enjoy as an ME, and tops it off with PID controllers. I made sure I understood the differential drive EOMs again, calibrated my robot in this module testing values of gain and trim that provided a good driving experience, and coded a PID controller that set the robot on a given course after starting from an initial offset.
 
          <div class="image-container50">
            <img src="/images/modcon_1.png" alt="Odometry">
@@ -217,7 +217,7 @@ content:
            <img src="/images/vis_servo_3.png" alt="Sim vs real life">
          </div>
 
-         Next, one of the coolest modules and one I can't pretend to understand fully-- object detection using deep learning models. I spent a lot of time reading and listening to lectures and youtube videos on advanced visual perception, loss functions, stochastic gradient descent, deep convolutional neural networks, etc. The jupyter notebooks were replaced with Google Colab this time, and I learned what was necessary to define a CNN using PyTorch, which I trained using YoloV5 and subsequently got recall and precision values up to high .8 and .9s respectively.  Here's a photo of my robot finding duckies. I found a few ways to trick it, but it was overall pretty good.
+         Next, one of the coolest modules-- object detection using deep learning models. I spent a lot of time reading and listening to lectures and youtube videos on advanced visual perception, loss functions, stochastic gradient descent, deep convolutional neural networks, etc. The jupyter notebooks were replaced with Google Colab this time, and I learned what was necessary to define a CNN using PyTorch, which I trained using YoloV5 and subsequently got recall and precision values up to high .8 and .9s respectively.  Here's a photo of my robot finding duckies. I found a few ways to trick it, but it was overall pretty good.
 
          <div class="image-container33">
             <img src="/images/obj_det_1.png" alt="Duckies in camera view">
@@ -238,7 +238,7 @@ content:
             <img src="/images/state_est_4.png" alt="Particle filter line graph">
          </div>
 
-         The histogram filter part of this module was a bit harder. The graded sim for the State Estimation module was a successful lane following run using a histogram filter localization approximation. You use the edges the camera detects from the lane markers to approximate your location. The loop this time was a more advanced track of twists and turns. The sim was evaluated by three attempts at the loop with different starting positions and directions. My first attempts were not amazing, veering off track and spiraling.
+         The histogram filter part of this module was a bit more difficult. The graded sim for the State Estimation module was a successful lane following run using a histogram filter localization approximation. You use the edges the camera detects from the lane markers to approximate your location. The loop this time was a more advanced track of twists and turns. The sim was evaluated by three attempts at the loop with different starting positions and directions. My first attempts were not amazing, veering off track and spiraling.
 
          <div class="image-container50">
            <img src="/images/state_est_6.png" alt="hist filter second attempt">
@@ -258,7 +258,7 @@ content:
            <img src="/images/state_est_10.png" alt="Hist filter out grass 2">
          </div>
 
-         After a few days of trial and error on why my code was breaking, I realized I was facing a division error as I updated and normalized my belief and the denominator approached zero. I added an if statement to handle the error, and my robot and I were almost making full loops immediately.
+         After some trial and error on why my code was breaking, I realized I was facing a division error as I updated and normalized my belief and the denominator approached zero. I added an if statement to handle the error, and my robot and I were almost making full loops immediately.
 
          <div class="image-container50">
            <img src="/images/state_est_11.png" alt="The worst hist loops youve ever seen">
@@ -266,8 +266,7 @@ content:
 
          Kidding, I'm not sure what exactly happened here, though I think it had to do with something not setting up right in the simulation. A rerun gave a much smoother result. Additional shifting in my approach to propagating the centroids of where the new mass should be, or finding the new location vote from the histogram filter in the update stage, got me to some pretty solid runs.
 
-         <div class="image-container33">
-           <img src="/images/state_est_12.png" alt="Hist lane following smoother">
+         <div class="image-container50">
            <img src="/images/state_est_13.png" alt="Hist lane following even smoother">
            <img src="/images/state_est_14.png" alt="Hist lane following smoothest">
          </div>
